@@ -13,18 +13,32 @@
             <th scope="col">LastName</th>
             <th scope="col">Email</th>
             <th scope="col">password</th>
+            <th scope="col">Buttton</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let student of students">
             <td >{{student.id}}</td>
-            <td>{{student.FirstName}}</td>
-            <td>{{student.LastName}}</td>
+            <td>{{student.firstname}}</td>
+            <td>{{student.lastname}}</td>
             <td>{{student.email}}</td>
             <td>{{student.password}}</td>
+            <td>
+              <button (click)="deletestudent(student.id)"class="btn btn-primary">Delete</button>
+        
+<button (click)="updatestudent(student.id)" class="btn btn-danger">Update</button>
+
+<button (click)="viewstudent(student.id)" class="btn btn-danger">View</button>
           </tr>
           
         </tbody>
       </table>
+
+
+
+
+
+
+      
 
 </body>

@@ -2,8 +2,8 @@ export class Student {
 
 
         id!:number;
-           FirstName!: string;
-         LastName!: string;
+           firstname!: string;
+           lastname!: string;
             email!: string;
            password!: string;
     
